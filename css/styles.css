@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --hue-neutral: 211;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /*background-color: hsl(var(--hue), 60%, 50%);*/
+  background-color: white;
+}
+/*
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+*/
+h1.title {
+  margin-bottom: 10px;
+}
+h1.score {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+h1.incorrect {
+  color: red;
+}
+h1.correct {
+  color: rgb(63, 200, 69);
+}
+h2 {
+  margin-bottom: 40px;
+  font-size: 26px;
+}
+h2.title {
+  margin-bottom: 60px;
+  font-size: 34px;
+}
+h2.correct {
+  color: rgb(63, 200, 69);
+}
+h2.incorrect {
+  color: red;
+}
+.results {
+  text-align: center;
+}
+.container {
+  width:800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 5px 10px 8px #CCC;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+.btn {
+  --hue: var(--hue-neutral);
+  /*border: 1px solid hsl(var(--hue), 100%, 30%);*/
+  background-color: hsl(var(--hue), 100%, 65%);
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  cursor: none;
+  font-size: 16px;
+}
+.btn:hover {
+  background-color: hsl(var(--hue), 100%, 75%);
+  color: #FFF;
+}
+.btn.correct {
+  --hue: var(--hue-correct);
+}
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  margin: 20px 0 40px 0;
+  cursor: pointer;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+.disable {
+  cursor: not-allowed;
+}
+.funFact {
+  width: 800px;
+  color: #999;
+  text-align: center;
+}

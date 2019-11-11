@@ -152,7 +152,7 @@ const questions = [
       { text: 'Memory Leak', correct: false },
       { text: 'Integer Overflow', correct: false }
     ]
-  },/*
+  },
   {
     question: 'Which of the terms listed below describes a programming error where an application tries to store a numeric value in a variable that is too small to hold it?',
     answers: [
@@ -283,10 +283,10 @@ const questions = [
       { text: 'Improper error handling', correct: true },
       { text: 'Brute-force attack', correct: false }
     ]
-  },*/
+  },
   {
     question: "A malfunction in preprogrammed sequential access to a shared resource is described as:",
-    fact: 'In a race condition sometimes due to uncontrollable delays the sequence of operations may change due to relative timing of events. When this happens, the system may enter a state not designed for and hence fail. The "race" happens because this type of failure is dependent on which entity gains access to the shared resource first.',
+    fact: '',
     answers: [
       { text: 'Race condition', correct: true },
       { text: 'Pointer deference', correct: false },

@@ -119,7 +119,6 @@ h2.incorrect {
   cursor: not-allowed;
 }
 .funFact {
-  width: 800px;
   color: #999;
-  text-align: center;
+  color: blue;
 }
